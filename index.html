@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Quantum404AK Google Drive API — a small-scale, trusted tool for authorized Google Drive workflows." />
+    <link rel="icon" href="Quantum404AK.png" type="image/png" />
     <title>Quantum404AK Google Drive API</title>
     <style>
       :root {
@@ -29,7 +30,23 @@
       .container { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
       header { padding: 22px 0; border-bottom: 1px solid var(--border); }
       nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-      .brand { color: var(--text); font-weight: 750; letter-spacing: .01em; }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--text);
+        font-weight: 750;
+        letter-spacing: .01em;
+        text-decoration: none;
+      }
+      .brand-logo {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
       nav a { color: var(--muted); margin-left: 22px; text-decoration: none; font-size: .95rem; }
       nav a:hover { color: var(--accent); }
       .hero { padding: 92px 0 72px; max-width: 820px; }
@@ -56,7 +73,10 @@
     <header>
       <div class="container">
         <nav aria-label="Primary navigation">
-          <div class="brand">Quantum404AK</div>
+          <a href="index.html" class="brand" aria-label="Quantum404AK home">
+            <img src="Quantum404AK.png" alt="Quantum404AK logo" class="brand-logo" />
+            <span>Quantum404AK</span>
+          </a>
           <div><a href="#about">About</a><a href="#principles">Principles</a><a href="#legal">Legal</a></div>
         </nav>
       </div>
@@ -66,7 +86,7 @@
       <section class="container hero" id="about">
         <div class="eyebrow">Small-scale · trusted access · Google Drive</div>
         <h1>Quantum404AK Google Drive API</h1>
-        <p class="lead">A focused, independently operated application for authorized Google Drive workflows, including personal RClone integrations. Built for a small group of known users—not for mass public access.</p>
+        <p class="lead">A focused, independently operated application for authorized Google Drive workflows, including personal RClone integrations. Built for a small group of known users—not for public hosting, mass deployment, or unrelated commercial use.</p>
         <div class="actions">
           <a class="button primary" href="https://github.com/Quantum404AK/Quantum404AK_GoogleDriveAPI">View the repository</a>
           <a class="button" href="#legal">Read the policies</a>
@@ -81,14 +101,14 @@
 
       <section class="container notice">
         <h2>Use responsibly</h2>
-        <p>Review Google’s requested permissions before authorizing access, protect your credentials and tokens, keep backups of important files, and revoke access when you no longer need it. No online service is completely risk-free.</p>
+        <p>Review Google’s requested permissions before authorizing access, protect your credentials and tokens, keep backups of important files, and revoke access when you no longer need it. No guarantee of availability or continuity is provided.</p>
       </section>
     </main>
 
     <footer id="legal">
       <div class="container">
         <p><strong>Legal information</strong></p>
-        <p><a href="https://github.com/Quantum404AK/Quantum404AK_GoogleDriveAPI/blob/main/privacy-policy.md">Privacy Policy</a> · <a href="https://github.com/Quantum404AK/Quantum404AK_GoogleDriveAPI/blob/main/terms-of-service.md">Terms of Service</a></p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a></p>
         <p>Quantum404AK Google Drive API is not affiliated with or endorsed by Google. Effective date: September 19, 2026.</p>
       </div>
     </footer>
